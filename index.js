@@ -1,3 +1,5 @@
+function rollDice() {
+
 var randomNumber1 = Math.ceil (Math.random()*6);
 
 var elmImg1 = document.querySelector('.img1');
@@ -26,3 +28,9 @@ else if (randomNumber2 > randomNumber1) {
 } else {
     textHead.innerHTML = "Draw!";
 }
+
+}
+
+document.addEventListener('click', rollDice);
+
+rollDice();
